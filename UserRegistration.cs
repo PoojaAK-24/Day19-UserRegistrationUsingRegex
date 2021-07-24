@@ -7,13 +7,13 @@ namespace UserRegistrationRegex
 {
     class UserRegistration
     {
-        public void validateNumericPassword(string numericpassword)
+        public void validateSpecialCharPassword(string specialcharpassword)
         {
-            string stringForNumericPassword = "^.{8,}?";
-            if (Regex.IsMatch(numericpassword, stringForNumericPassword))
-                Console.WriteLine(numericpassword + " is Valid");
+            string stringForSpecialCharPassword = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$";
+            if (Regex.IsMatch(specialcharpassword, stringForSpecialCharPassword))
+                Console.WriteLine(specialcharpassword + " is Valid");
             else
-                Console.WriteLine(numericpassword + " is Invalid");
+                Console.WriteLine(specialcharpassword + " is Invalid");
         }
     }
 }
