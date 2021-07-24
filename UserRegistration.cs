@@ -7,13 +7,13 @@ namespace UserRegistrationRegex
 {
     class UserRegistration
     {
-        public void validatePassword(string password)
+        public void validateUpperCasePassword(string uppercasepassword)
         {
-            string stringForPassword = "^.{8,}?";
-            if (Regex.IsMatch(password, stringForPassword))
-                Console.WriteLine(password + " is Valid");
+            string stringForUpperCasePassword = "[A-Z]+.{8,}?";
+            if (Regex.IsMatch(uppercasepassword, stringForUpperCasePassword))
+                Console.WriteLine(uppercasepassword + " is Valid");
             else
-                Console.WriteLine(password + " is Invalid");
+                Console.WriteLine(uppercasepassword + " is Invalid");
         }
     }
 }
