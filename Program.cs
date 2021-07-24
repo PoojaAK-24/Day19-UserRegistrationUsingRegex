@@ -10,7 +10,7 @@ namespace UserRegistrationRegex
             Console.WriteLine("*First letter should be capital.");
             Console.WriteLine("*length should be Minimum three characters.");
             UserRegistration validateUser = new UserRegistration();
-            validateUser.validateFirstName("Pooja");
+            validateUser.validateLastName("Reddy");
            
             Console.ReadKey();
         }
