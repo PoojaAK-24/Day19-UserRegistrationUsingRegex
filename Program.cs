@@ -10,7 +10,7 @@ namespace UserRegistrationRegex
             Console.WriteLine("*Password should contain minimum 8 Characters");
             Console.WriteLine("Password should contain numeric values");
             UserRegistration validateUser = new UserRegistration();
-            validateUser.validateNumericPassword("reddy123");
+            validateUser.validateSpecialCharPassword("reddy#123");
            
             Console.ReadKey();
         }
