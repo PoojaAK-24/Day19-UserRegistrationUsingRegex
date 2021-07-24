@@ -7,10 +7,10 @@ namespace UserRegistrationRegex
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration");
-            Console.WriteLine("*First letter should be capital.");
-            Console.WriteLine("*length should be Minimum three characters.");
+            Console.WriteLine("*Email Should have @ symbol");
+            Console.WriteLine("*Email should have domain name");
             UserRegistration validateUser = new UserRegistration();
-            validateUser.validateLastName("Reddy");
+            validateUser.validateEmail("pooja.reddy@bridgelabz.co.in");
            
             Console.ReadKey();
         }
