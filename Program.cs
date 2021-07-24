@@ -8,8 +8,9 @@ namespace UserRegistrationRegex
         {
             Console.WriteLine("Welcome to User Registration");
             Console.WriteLine("*Password should contain minimum 8 Characters");
+            Console.WriteLine("First letter should be capital");
             UserRegistration validateUser = new UserRegistration();
-            validateUser.validatePassword("pooja@123");
+            validateUser.validateUpperCasePassword("Pooja@123");
            
             Console.ReadKey();
         }
